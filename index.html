@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrutika Dharmadhikari | Technical Writer</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --palette-2-dark: #3A4A5A;
+            --palette-2-accent: #6B7E8F;
+            --palette-2-light: #E6EAF0;
+            --palette-2-highlight: #9CADC1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IBM Plex Mono', monospace;
+            line-height: 1.6;
+            background-color: var(--palette-2-light);
+            color: var(--palette-2-dark);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        header {
+            background-color: var(--palette-2-dark);
+            color: var(--palette-2-light);
+            text-align: center;
+            padding: 100px 0;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        header h1 {
+            font-family: 'Source Code Pro', monospace;
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: var(--palette-2-highlight);
+            letter-spacing: -2px;
+        }
+
+        header .subtitle {
+            font-size: 1.5em;
+            font-weight: 400;
+            color: var(--palette-2-light);
+        }
+
+        #about, #projects {
+            background: var(--palette-2-light);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border: 2px solid var(--palette-2-accent);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--palette-2-highlight);
+        }
+
+        .project-card-content {
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .project-btn {
+            display: inline-block;
+            background: var(--palette-2-accent);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: 'Source Code Pro', monospace;
+            transition: background 0.3s ease;
+            align-self: center;
+            margin-top: auto;
+        }
+
+        .project-btn:hover {
+            background: var(--palette-2-highlight);
+        }
+
+        footer {
+            background: var(--palette-2-dark);
+            color: var(--palette-2-light);
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            header {
+                padding: 60px 0;
+            }
+            header h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Shrutika Dharmadhikari</h1>
+            <div class="subtitle">Technical Writer | Portfolio</div>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hi! I'm a Certified Technical Writer (Software) with strong conceptual knowledge, skilled in simplifying complex ideas into clear, user-friendly content. Passionate about creating impactful documentation that empowers and enhances user experiences.</p>
+    </section>
+
+    <section id="projects" class="container">
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Quick Start Guide</h3>
+                    <p>Created a quick start guide for the Tech Writers Tribe App using Markdown with a complete TOC to simplify users' initial product experience.</p>
+                    <a href="https://github.com/shruxt/Portfolio/blob/main/TechWritersTribeAppQSG.md" class="project-btn" download>View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Concept Topic (Whatsapp)</h3>
+                    <p>Developed a structured concept topic on understanding Jira Task/Issue, utilizing a semantic framework to clearly define, describe, and contextualize core concepts.</p>
+                    <a href="https://github.com/shruxt/Portfolio/blob/main/ConceptTopic_Portfolio.docx.pdf" class="project-btn" download>View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Task Topic (TWT App)</h3>
+                    <p>Leveraged a structured approach to create clear, actionable instructions with context and expected results for making calls on WhatsApp.</p>
+                    <a href="https://github.com/shruxt/Portfolio/blob/main/TaskTopic_Portfolio.docx.pdf" class="project-btn" download>View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Shrutika Dharmadhikari</p>
+        <p>I'd love to hear from you</p>
+        <p>Contact me at <a href="mailto:shrutikadharmadhikari96@gmail.com">shrutikadharmadhikari96@gmail.com</a></p>
+    </footer>
+</body>
+</html>
